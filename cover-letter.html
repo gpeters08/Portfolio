@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cover Letter | Garrett Peters</title>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- 🔧 Edit these two lines only -->
+  <script>
+    const COMPANY = "Live! Casino Pittsburgh";
+    const ROLE = "Junior Business Analyst";
+  </script>
+
+  <!-- Fills placeholders after the page loads -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const map = {
+        company: COMPANY,
+        role: ROLE
+      };
+      document.querySelectorAll("[data-fill]").forEach(el => {
+        const key = el.getAttribute("data-fill");
+        if (map[key] != null) el.textContent = map[key];
+      });
+      document.title = `Cover Letter | ${ROLE} @ ${COMPANY} | Garrett Peters`;
+    });
+  </script>
+</head>
+<body>
+<header>
+  <h1>Garrett Peters</h1>
+  <p><span>garrettpeters1518@gmail.com | Pittsburgh, PA | 814.442.8195</span><br></p>
+  <nav>
+    <ul>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="cover-letter.html">Cover Letter</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="courses-completed.html">Courses Completed</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <article class="card">
+    <h2>Dear <span data-fill="company"></span> Hiring Team,</h2>
+
+    <p>
+      I am writing to formally express my interest in the <strong><span data-fill="role"></span></strong> position at <strong><span data-fill="company"></span></strong>. 
+      In my current position at Live! Casino Pittsburgh as a <strong>Revenue Auditor</strong>, I have gained valuable experience analyzing financial data, reconciling transactions,
+       and preparing regulatory reports. This role has allowed me to develop a strong foundation in <em>data analysis, reporting, and compliance</em> while working within high-volume casino operations. 
+       Beyond these technical skills, I have developed a true passion for contributing to the casino and gambling industry. I am eager to continue growing my career in this field and hope to expand my 
+       impact by supporting broader business decisions and contributing to <span data-fill="company"></span>’s ongoing success.
+    </p>
+    <hr />
+    <p>
+      In addition to my auditing responsibilties, I have been actively developing my skills in data analysis
+      through my coursework at <strong>Western Governors University</strong>, where I am pursuing a
+      <strong>Bachelor of Science in Data Analytics</strong>. My projects have included working with <em>SQL databases</em> to
+      extract and join datasets, using <em>Python</em> for data wrangling and visualization, and building interactive dashboards
+      in <em>Power BI</em>. These experiences have strengthened my ability to analyze complex data, identify patterns, and
+      translate findings into actionable insights—skills directly relevant to the <strong><span data-fill="role"></span></strong>
+      position.
+    </p>
+    <hr />
+    <p>
+      Beyond my formal coursework, I have completed several data analysis projects that reflect both technical ability and practical application. 
+      For example, I built a <a href="projects/Subway Final Project.pdf" target="_blank"><strong>sales forecasting model</strong></a> in R Studio to compare unit differences between Subway restaurant locations, 
+      conducted a <a href="projects/Titanic Final Project.pdf" target="_blank"><strong>logistic regression analysis</strong></a> to evaluate survival factors in the Titanic dataset, 
+      and performed a <a href="projects/Best Cookie Analysis.pdf" target="_blank"><strong>one-way ANOVA study</strong></a> on cookie recipes to evaluate how ingredient variations affected texture and identify the optimal combination.
+      In Python, I developed a <a href="projects/Bike Explanatory.pdf" target="_blank"><strong>bike-sharing explanatory analysis</strong></a> to examine ridership patterns, 
+      which led to <a href="projects/Bike Exploratory.pdf" target="_blank"><strong>bike-sharing exploratory analysis</strong></a> to uncover trends in trip duration and demographics. I created a <a href="projects/Movie Revenue Analysis.pdf" target="_blank"><strong>movie revenue analysis</strong></a> to determine the key drivers of box office performance. 
+      Additionally, within my current role, I built an <mark>Excel-based variance alert system</mark> for slot progressives that uses conditional formatting to flag liabilities over $4,000 in real time.
+    </p>
+
+    <hr />
+    <p>
+      Combining my academic training with my hands-on experience at <span data-fill="company"></span> has allowed me to develop both
+      the technical and practical perspectives needed to succeed in this role. I am confident that this blend of skills positions me
+      to contribute not only accurate analyses, but also meaningful recommendations that support strategic decision-making.
+    </p>
+
+      <p><strong>Sincerely,</strong><br />Garrett Peters</p>
+  </article>
+</main>
+
+<footer>
+  <p>&copy; 2025 Garrett Peters</p>
+</footer>
+</body>
+</html>

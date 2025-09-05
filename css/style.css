@@ -1,0 +1,321 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
+  background-color: #f4f4f9;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.progress-container {
+  width: 80%;
+  background-color: #cabfbf;
+  border-radius: 25px;
+  margin: 0 auto;
+  height: 30px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.842);
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0; /* start empty */
+  background-color: #fa5204fa;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  font-weight: bold;
+  animation: fillBar 2s forwards; /* animate to target width */
+}
+
+/* Animation keyframes */
+@keyframes fillBar {
+  from { width: 0; }
+  to { width: 45%; } /* <-- set your progress here */
+}
+
+
+/* Reset box sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Make sure all text defaults to left */
+body {
+  text-align: left;
+}
+
+/* Center the whole section */
+.progress-wrapper {
+  text-align: center;
+  margin: 40px auto;
+}
+.progress-wrapper h2 {
+  text-align: center;   
+  margin-bottom: 15px;  
+}
+/* Specifically for headings in your resume */
+h2, h3, h4, h5 {
+  text-align: left;
+  margin-left: 0;
+}
+
+/* Bullets already default to left, but force it if needed */
+ul {
+  text-align: left;
+  margin-left: 20px;  
+  padding-left: 20px; 
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f8fa;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3 {
+  margin: 0.5rem 0;
+}
+
+/* Header and Footer */
+header, footer {
+  background: #0f172a;  
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #e2e8f0;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+}
+
+nav ul li a:hover {
+  background: #1e293b;
+}
+
+/* Sections and cards */
+section, article {
+  background: white;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+/* ID styles */
+#current-date { font-weight: bold; color: #ffffff; }
+#year { font-weight: bold; }
+
+
+/* Buttons */
+.button {
+  display: inline-block;
+  background: #2563eb;
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: #1d4ed8;
+}
+
+/* Form basics */
+label {
+  display: block;
+  margin: 0.5rem 0 0.25rem;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+}
+
+/* Skills grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 1rem; 
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.skills-grid li {
+  background: #f1f5f9;
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-weight: bold;
+}
+/* Education layout */
+.edu-item {
+  display: flex;
+  justify-content: space-between; 
+  align-items: baseline;          
+  margin-bottom: 0.25rem;
+}
+
+.edu-location {
+  font-style: italic;
+  color: #475569; 
+}
+.edu-dates {
+  color: #475569;     
+  font-style: italic; 
+}
+/* Tables */
+table {
+  width: 100%;              
+  border-collapse: collapse; 
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+caption {
+  caption-side: top;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+th, td {
+  border: 1px solid #e2e8f0;
+  padding: 0.5rem 0.75rem; 
+  text-align: center;
+  }
+
+
+th {
+  background-color: #f1f5f9;
+  text-align: center; 
+}
+
+td:nth-child(3), td:nth-child(4) {
+  text-align: center; 
+}
+
+tr:nth-child(even) {
+  background-color: #f9fafb; 
+}
+
+/* Form styling */
+form {
+  max-width: 500px;   
+  margin: 1rem auto;  
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #f9fafb;
+}
+
+form label {
+  display: block;
+  margin-top: 0.75rem;
+  font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+form input[type="radio"] {
+  width: auto; 
+  margin-right: 0.25rem;
+}
+
+form button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #1d4ed8;
+}
+.radio-group {
+  display: flex;
+  gap: 1rem;        
+  margin-top: 0.5rem;
+}
+
+.radio-group label {
+  font-weight: normal; 
+}
+
+.source {
+  font-size: 0.85rem;
+  color: #475569;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+mark {
+  background-color: #3c6ae771;  
+  color: rgb(0, 0, 0);              
+  padding: 0 3px;            
+  border-radius: 3px;        
+}
+
+/* Center and limit width of project sections */
+.project {
+  max-width: 900px;     /* adjust as needed (800–1000px looks good) */
+  margin: 40px auto;
+  padding: 20px;
+  text-align: left;
+}
+
+/* PDF preview centered inside project */
+.pdf-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.pdf-container embed {
+  width: 100%;
+  max-width: 800px;   /* keeps preview from being too wide */
+  height: 400px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
