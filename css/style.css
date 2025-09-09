@@ -319,3 +319,32 @@ mark {
   border: 1px solid #ccc;
   border-radius: 8px;
 }
+/* Job header with dates+location on the right */
+.role-item{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;      /* keeps top aligned */
+  gap:1rem;
+  margin-bottom:0.25rem;
+}
+
+.role-right{
+  display:flex;
+  flex-direction:column;       /* stack dates above location */
+  align-items:flex-end;        /* right-align the text */
+  line-height:1.2;             /* tighten spacing */
+}
+
+.role-dates{
+  color:#475569;
+  font-style:italic;
+}
+
+.role-location{
+  color:#475569;
+  font-style:italic;
+  margin-top:0.1rem;           /* tiny space under dates */
+}
+
+/* (optional) tighten the h3 to reduce white space */
+h3{ margin:0.25rem 0; }
