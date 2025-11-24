@@ -33,7 +33,7 @@ h1 {
 /* Animation keyframes */
 @keyframes fillBar {
   from { width: 0; }
-  to { width: 71%; } /* <-- set your progress here */
+  to { width: 68%; } /* <-- set your progress here */
 }
 
 
